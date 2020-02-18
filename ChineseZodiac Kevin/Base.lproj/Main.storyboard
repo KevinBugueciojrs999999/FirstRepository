@@ -92,6 +92,82 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillProportionally" alignment="top" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="mYJ-TN-xW4">
+                                <rect key="frame" x="38" y="99" width="340" height="685"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jA5-yS-fbb">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJG-Sr-5IJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" image="rsz_1rata"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuV-5E-Jv0">
+                                                <rect key="frame" x="120" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Toro"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L94-It-0tH">
+                                                <rect key="frame" x="240" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Tigre"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lx9-a6-IWm">
+                                        <rect key="frame" x="0.0" y="195" width="340" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW7-Sf-rG0">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Conejo"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKF-62-Opp">
+                                                <rect key="frame" x="120" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Dragon"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beJ-Jb-lBr">
+                                                <rect key="frame" x="240" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Serpiente"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-A5-9FX">
+                                        <rect key="frame" x="0.0" y="390" width="340" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-P6-p7d">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Caballo"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vt7-x8-ytv">
+                                                <rect key="frame" x="120" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Cabra"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85e-yc-31T">
+                                                <rect key="frame" x="240" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Mono"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YAR-Qc-Qpr">
+                                        <rect key="frame" x="0.0" y="585" width="340" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-uw-k5y">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Pollo"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tla-4f-KVJ">
+                                                <rect key="frame" x="120" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Perro"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-gU-QEN">
+                                                <rect key="frame" x="240" y="0.0" width="100" height="100"/>
+                                                <state key="normal" image="Cerdo"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -102,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="357.97101449275362" y="-242.41071428571428"/>
+            <point key="canvasLocation" x="356.52173913043481" y="-242.41071428571428"/>
         </scene>
         <!--Sing Description View Controller-->
         <scene sceneID="rGt-Ls-sbg">
@@ -116,7 +192,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RATA" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-QT-aXE">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rsz_1rata" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-QT-aXE">
                                         <rect key="frame" x="8" y="8" width="164" height="178"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -184,12 +260,23 @@ On the financial side, they like saving and can be stingy. However, their love f
         </scene>
     </scenes>
     <resources>
-        <image name="RATA" width="1017" height="1059"/>
+        <image name="Caballo" width="100" height="100"/>
+        <image name="Cabra" width="100" height="100"/>
+        <image name="Cerdo" width="100" height="100"/>
+        <image name="Conejo" width="100" height="100"/>
+        <image name="Dragon" width="100" height="100"/>
+        <image name="Mono" width="100" height="100"/>
+        <image name="Perro" width="100" height="100"/>
+        <image name="Pollo" width="100" height="100"/>
+        <image name="Serpiente" width="100" height="100"/>
+        <image name="Tigre" width="100" height="100"/>
+        <image name="Toro" width="100" height="100"/>
         <image name="calendar" width="64" height="64"/>
         <image name="chinese" width="64" height="64"/>
         <image name="next" width="512" height="512"/>
+        <image name="rsz_1rata" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yGg-d7-6NH"/>
+        <segue reference="Kh0-oH-TRU"/>
     </inferredMetricsTieBreakers>
 </document>
