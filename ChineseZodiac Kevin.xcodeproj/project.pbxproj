@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		8BE5747023FA859D005841A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5746F23FA859D005841A3 /* AppDelegate.swift */; };
 		8BE5747223FA859D005841A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5747123FA859D005841A3 /* SceneDelegate.swift */; };
-		8BE5747423FA859D005841A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5747323FA859D005841A3 /* ViewController.swift */; };
+		8BE5747423FA859D005841A3 /* TwelveSingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5747323FA859D005841A3 /* TwelveSingsViewController.swift */; };
 		8BE5747723FA859D005841A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5747523FA859D005841A3 /* Main.storyboard */; };
 		8BE5747923FA859E005841A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5747823FA859E005841A3 /* Assets.xcassets */; };
 		8BE5747C23FA859E005841A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5747A23FA859E005841A3 /* LaunchScreen.storyboard */; };
+		8BF4F53123FBF05200F7E517 /* Sings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4F53023FBF05200F7E517 /* Sings.swift */; };
+		8BF4F53323FBF55500F7E517 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4F53223FBF55500F7E517 /* PickerViewController.swift */; };
+		8BF4F53523FBF6EF00F7E517 /* SingDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4F53423FBF6EF00F7E517 /* SingDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8BE5746C23FA859D005841A3 /* ChineseZodiac Kevin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChineseZodiac Kevin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE5746F23FA859D005841A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BE5747123FA859D005841A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8BE5747323FA859D005841A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BE5747323FA859D005841A3 /* TwelveSingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelveSingsViewController.swift; sourceTree = "<group>"; };
 		8BE5747623FA859D005841A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BE5747823FA859E005841A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BE5747B23FA859E005841A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BE5747D23FA859E005841A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BF4F53023FBF05200F7E517 /* Sings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sings.swift; sourceTree = "<group>"; };
+		8BF4F53223FBF55500F7E517 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		8BF4F53423FBF6EF00F7E517 /* SingDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingDescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				8BE5746F23FA859D005841A3 /* AppDelegate.swift */,
 				8BE5747123FA859D005841A3 /* SceneDelegate.swift */,
-				8BE5747323FA859D005841A3 /* ViewController.swift */,
+				8BE5747323FA859D005841A3 /* TwelveSingsViewController.swift */,
+				8BF4F53223FBF55500F7E517 /* PickerViewController.swift */,
 				8BE5747523FA859D005841A3 /* Main.storyboard */,
 				8BE5747823FA859E005841A3 /* Assets.xcassets */,
 				8BE5747A23FA859E005841A3 /* LaunchScreen.storyboard */,
 				8BE5747D23FA859E005841A3 /* Info.plist */,
+				8BF4F53023FBF05200F7E517 /* Sings.swift */,
+				8BF4F53423FBF6EF00F7E517 /* SingDescriptionViewController.swift */,
 			);
 			path = "ChineseZodiac Kevin";
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE5747423FA859D005841A3 /* ViewController.swift in Sources */,
+				8BF4F53523FBF6EF00F7E517 /* SingDescriptionViewController.swift in Sources */,
+				8BF4F53323FBF55500F7E517 /* PickerViewController.swift in Sources */,
+				8BE5747423FA859D005841A3 /* TwelveSingsViewController.swift in Sources */,
 				8BE5747023FA859D005841A3 /* AppDelegate.swift in Sources */,
+				8BF4F53123FBF05200F7E517 /* Sings.swift in Sources */,
 				8BE5747223FA859D005841A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dbN-xj-2Vn" kind="relationship" relationship="rootViewController" id="Bec-1A-atQ"/>
+                        <segue destination="dbN-xj-2Vn" kind="relationship" relationship="rootViewController" id="Lb8-Q0-YZh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WhV-YK-ZZb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -45,7 +45,7 @@
         <!--Calculate your sing-->
         <scene sceneID="9Pc-02-s0e">
             <objects>
-                <viewController id="dbN-xj-2Vn" customClass="PickerViewController" sceneMemberID="viewController">
+                <viewController id="dbN-xj-2Vn" customClass="PickerViewController" customModule="ChineseZodiac_Kevin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TXu-3g-puc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="next"/>
                                 <connections>
-                                    <segue destination="1eU-21-FrJ" kind="push" id="yGg-d7-6NH"/>
+                                    <action selector="didTapNextButton:" destination="dbN-xj-2Vn" eventType="touchUpInside" id="wWY-e0-5On"/>
+                                    <segue destination="1eU-21-FrJ" kind="push" identifier="pickerToDescriptionSegue" id="yGg-d7-6NH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,6 +81,10 @@
                         <viewLayoutGuide key="safeArea" id="NQm-J2-UZn"/>
                     </view>
                     <navigationItem key="navigationItem" title="Calculate your sing" id="MR2-UO-NN2"/>
+                    <connections>
+                        <outlet property="datePickerOutlet" destination="6hr-30-5xQ" id="5F4-no-hFv"/>
+                        <outlet property="nextOutlet" destination="sdw-kV-gD3" id="sa1-NU-WnJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5u-br-X16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +93,7 @@
         <!--Chinese zodiac sings-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TwelveSingsViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TwelveSingsViewController" customModule="ChineseZodiac_Kevin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,14 +108,23 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="99.5" height="102.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" image="rsz_1rata"/>
+                                                <connections>
+                                                    <action selector="didTapRat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3CQ-oA-NZD"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuV-5E-Jv0">
                                                 <rect key="frame" x="119.5" y="0.0" width="99" height="102.5"/>
                                                 <state key="normal" image="Toro"/>
+                                                <connections>
+                                                    <action selector="didTapOx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enE-ic-5RW"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L94-It-0tH">
                                                 <rect key="frame" x="238.5" y="0.0" width="99.5" height="102.5"/>
                                                 <state key="normal" image="Tigre"/>
+                                                <connections>
+                                                    <action selector="didTapTiger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipn-6z-zpG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -120,14 +134,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW7-Sf-rG0">
                                                 <rect key="frame" x="0.0" y="0.0" width="99.5" height="103"/>
                                                 <state key="normal" image="Conejo"/>
+                                                <connections>
+                                                    <action selector="didTapBunny:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIn-p2-huY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKF-62-Opp">
                                                 <rect key="frame" x="119.5" y="0.0" width="99" height="103"/>
                                                 <state key="normal" image="Dragon"/>
+                                                <connections>
+                                                    <action selector="didTapDragon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="60s-4c-iFu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beJ-Jb-lBr">
                                                 <rect key="frame" x="238.5" y="0.0" width="99.5" height="103"/>
                                                 <state key="normal" image="Serpiente"/>
+                                                <connections>
+                                                    <action selector="didTapSnake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQj-VB-h0V"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -137,14 +160,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-P6-p7d">
                                                 <rect key="frame" x="0.0" y="0.0" width="99.5" height="102.5"/>
                                                 <state key="normal" image="Caballo"/>
+                                                <connections>
+                                                    <action selector="didTapHorse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWK-lb-YLg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vt7-x8-ytv">
                                                 <rect key="frame" x="119.5" y="0.0" width="99" height="102.5"/>
                                                 <state key="normal" image="Cabra"/>
+                                                <connections>
+                                                    <action selector="didTapGoat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDb-Ag-VCY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85e-yc-31T">
                                                 <rect key="frame" x="238.5" y="0.0" width="99.5" height="102.5"/>
                                                 <state key="normal" image="Mono"/>
+                                                <connections>
+                                                    <action selector="didTapMonkey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwY-QV-XuG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -154,14 +186,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-uw-k5y">
                                                 <rect key="frame" x="0.0" y="0.0" width="99.5" height="110"/>
                                                 <state key="normal" image="Pollo"/>
+                                                <connections>
+                                                    <action selector="didTapChicken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2IB-P1-9u5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tla-4f-KVJ">
                                                 <rect key="frame" x="119.5" y="0.0" width="99" height="110"/>
                                                 <state key="normal" image="Perro"/>
+                                                <connections>
+                                                    <action selector="didTapDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edB-L0-svJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-gU-QEN">
                                                 <rect key="frame" x="238.5" y="0.0" width="99.5" height="110"/>
                                                 <state key="normal" image="Cerdo"/>
+                                                <connections>
+                                                    <action selector="didTapPig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8H-gp-QlY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -179,7 +220,19 @@
                     </view>
                     <navigationItem key="navigationItem" title="Chinese zodiac sings" id="kE3-JD-Th3"/>
                     <connections>
-                        <segue destination="1eU-21-FrJ" kind="push" id="Kh0-oH-TRU"/>
+                        <outlet property="bunnyOutlet" destination="NW7-Sf-rG0" id="FE9-PU-UFJ"/>
+                        <outlet property="chickenOutlet" destination="NOh-uw-k5y" id="tAK-0b-zIf"/>
+                        <outlet property="dogOutlet" destination="Tla-4f-KVJ" id="cgN-v3-QVF"/>
+                        <outlet property="dragonOutlet" destination="BKF-62-Opp" id="BQ4-lU-exA"/>
+                        <outlet property="goatOutlet" destination="vt7-x8-ytv" id="6Yq-cY-fkp"/>
+                        <outlet property="horseOutlet" destination="jKc-P6-p7d" id="PrE-hF-UC6"/>
+                        <outlet property="monkeyOutlet" destination="85e-yc-31T" id="jSX-1r-2H5"/>
+                        <outlet property="oxOutlet" destination="wuV-5E-Jv0" id="j6Y-5Z-gQ8"/>
+                        <outlet property="pigOutlet" destination="WNz-gU-QEN" id="aMm-C1-FyE"/>
+                        <outlet property="ratOutlet" destination="tJG-Sr-5IJ" id="aoC-W7-azG"/>
+                        <outlet property="snakeOutlet" destination="beJ-Jb-lBr" id="UsN-Mq-Q1r"/>
+                        <outlet property="tigerOutlet" destination="L94-It-0tH" id="At7-ur-jYg"/>
+                        <segue destination="1eU-21-FrJ" kind="push" identifier="singsToDescriptionSegue" id="Kh0-oH-TRU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,43 +242,43 @@
         <!--Sing Description View Controller-->
         <scene sceneID="rGt-Ls-sbg">
             <objects>
-                <viewController id="1eU-21-FrJ" customClass="SingDescriptionViewController" sceneMemberID="viewController">
+                <viewController id="1eU-21-FrJ" customClass="SingDescriptionViewController" customModule="ChineseZodiac_Kevin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g97-mA-Tfy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-gn-yma">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-gn-yma">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rsz_1rata" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-QT-aXE">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rsz_1rata" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-QT-aXE">
                                         <rect key="frame" x="8" y="8" width="164" height="178"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="164" id="P4S-qp-AJx"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvM-aJ-gq1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvM-aJ-gq1">
                                         <rect key="frame" x="180" y="8" width="226" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="MTn-tF-39Y"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Features of your sing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-Uy-nL2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Features of your sing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-Uy-nL2">
                                         <rect key="frame" x="180" y="145" width="226" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1912, 1924,1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-EG-trE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1912, 1924,1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-EG-trE">
                                         <rect key="frame" x="180" y="61" width="226" height="73"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvU-YM-qH1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvU-YM-qH1">
                                         <rect key="frame" x="8" y="194" width="398" height="523"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Optimistic and energetic, people born in the Rat year are likable by all. They are sensitive to other’s emotions but are stubborn with your opinion. Their personality is kind, but due to weak communication skills, their words may seem impolite and rude.
 
 On the financial side, they like saving and can be stingy. However, their love for hoarding will sometimes cause them to waste money on unnecessary things.</string>
@@ -234,14 +287,47 @@ On the financial side, they like saving and can be stingy. However, their love f
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="oB7-QT-aXE" firstAttribute="leading" secondItem="4mJ-gn-yma" secondAttribute="leadingMargin" id="3Iv-Fg-fNf"/>
+                                    <constraint firstItem="tvM-aJ-gq1" firstAttribute="leading" secondItem="oB7-QT-aXE" secondAttribute="trailing" constant="8" id="9D1-5r-xKZ"/>
+                                    <constraint firstItem="WvU-YM-qH1" firstAttribute="top" secondItem="oB7-QT-aXE" secondAttribute="bottom" constant="8" id="B8d-Md-5ai"/>
+                                    <constraint firstItem="g6D-Uy-nL2" firstAttribute="top" secondItem="tvM-aJ-gq1" secondAttribute="bottom" constant="72" id="KRz-tq-dJb"/>
+                                    <constraint firstItem="SQe-EG-trE" firstAttribute="leading" secondItem="g6D-Uy-nL2" secondAttribute="leading" id="KS2-MD-rR4"/>
+                                    <constraint firstItem="tvM-aJ-gq1" firstAttribute="trailing" secondItem="4mJ-gn-yma" secondAttribute="trailingMargin" id="QHO-KP-SAR"/>
+                                    <constraint firstItem="tvM-aJ-gq1" firstAttribute="trailing" secondItem="SQe-EG-trE" secondAttribute="trailing" id="Tob-Q3-vRj"/>
+                                    <constraint firstItem="g6D-Uy-nL2" firstAttribute="top" secondItem="SQe-EG-trE" secondAttribute="bottom" constant="11" id="WjI-o0-lFC"/>
+                                    <constraint firstItem="WvU-YM-qH1" firstAttribute="centerX" secondItem="4mJ-gn-yma" secondAttribute="centerX" id="Wxi-TF-lx4"/>
+                                    <constraint firstItem="oB7-QT-aXE" firstAttribute="top" secondItem="tvM-aJ-gq1" secondAttribute="top" id="XVM-mX-lDN"/>
+                                    <constraint firstItem="oB7-QT-aXE" firstAttribute="centerY" secondItem="SQe-EG-trE" secondAttribute="centerY" id="b7d-gj-maj"/>
+                                    <constraint firstItem="oB7-QT-aXE" firstAttribute="bottom" secondItem="g6D-Uy-nL2" secondAttribute="bottom" id="ccJ-I3-bVU"/>
+                                    <constraint firstItem="SQe-EG-trE" firstAttribute="top" secondItem="pFI-XR-m7O" secondAttribute="top" constant="61" id="eW2-FN-dJs"/>
+                                    <constraint firstItem="oB7-QT-aXE" firstAttribute="top" secondItem="4mJ-gn-yma" secondAttribute="topMargin" id="hDg-tK-kst"/>
+                                    <constraint firstItem="oB7-QT-aXE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WvU-YM-qH1" secondAttribute="leading" id="hfv-lX-riF"/>
+                                    <constraint firstItem="g6D-Uy-nL2" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WvU-YM-qH1" secondAttribute="trailing" id="lYY-lG-Q5f"/>
+                                    <constraint firstItem="SQe-EG-trE" firstAttribute="trailing" secondItem="g6D-Uy-nL2" secondAttribute="trailing" id="rZ7-TB-UK2"/>
+                                    <constraint firstItem="tvM-aJ-gq1" firstAttribute="leading" secondItem="SQe-EG-trE" secondAttribute="leading" id="s6j-tH-iMc"/>
+                                    <constraint firstItem="pFI-XR-m7O" firstAttribute="bottom" secondItem="WvU-YM-qH1" secondAttribute="bottom" constant="8" id="tW1-cd-ns1"/>
+                                    <constraint firstItem="WvU-YM-qH1" firstAttribute="bottom" secondItem="4mJ-gn-yma" secondAttribute="bottomMargin" id="z03-Hl-AIt"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="GbE-Hf-l88"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="pFI-XR-m7O"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4mJ-gn-yma" firstAttribute="bottom" secondItem="xe3-f6-wv7" secondAttribute="bottom" id="WTu-fs-WgS"/>
+                            <constraint firstItem="4mJ-gn-yma" firstAttribute="top" secondItem="xe3-f6-wv7" secondAttribute="top" id="mLS-3Y-lGY"/>
+                            <constraint firstItem="4mJ-gn-yma" firstAttribute="centerX" secondItem="g97-mA-Tfy" secondAttribute="centerX" id="utf-Ea-Vwa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xe3-f6-wv7"/>
                     </view>
                     <navigationItem key="navigationItem" id="12d-Pd-fQX"/>
+                    <connections>
+                        <outlet property="animalDescriptionOutlet" destination="WvU-YM-qH1" id="X2D-v4-xxE"/>
+                        <outlet property="animalNameTitleOutlet" destination="tvM-aJ-gq1" id="hWN-bz-m7W"/>
+                        <outlet property="animalSingOutlet" destination="oB7-QT-aXE" id="2rX-hX-rjs"/>
+                        <outlet property="animalYearsOutlet" destination="SQe-EG-trE" id="6MC-eD-BGa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2av-hL-ZwA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -283,6 +369,6 @@ On the financial side, they like saving and can be stingy. However, their love f
         <image name="rsz_1rata" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Kh0-oH-TRU"/>
+        <segue reference="yGg-d7-6NH"/>
     </inferredMetricsTieBreakers>
 </document>
