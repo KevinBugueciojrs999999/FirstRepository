@@ -141,6 +141,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvU-YM-qH1">
+                                        <rect key="frame" x="8" y="194" width="398" height="523"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Optimistic and energetic, people born in the Rat year are likable by all. They are sensitive to other’s emotions but are stubborn with your opinion. Their personality is kind, but due to weak communication skills, their words may seem impolite and rude.
+
+On the financial side, they like saving and can be stingy. However, their love for hoarding will sometimes cause them to waste money on unnecessary things.</string>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <viewLayoutGuide key="contentLayoutGuide" id="GbE-Hf-l88"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="pFI-XR-m7O"/>
