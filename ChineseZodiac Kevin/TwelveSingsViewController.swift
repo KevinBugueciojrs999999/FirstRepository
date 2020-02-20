@@ -27,7 +27,7 @@ class TwelveSingsViewController: UIViewController {
     
     //MARK: FUNCTIONS and CALLS
     
-    let sings: Sings
+    let animalsArray: [ChiniseZodiacAnimals] = []
     
     func descriptionSegue() {
 
@@ -35,15 +35,18 @@ class TwelveSingsViewController: UIViewController {
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let singDescritionViewController = segue.destination as? SingDescriptionViewController else { return}
-        SingDescriptionViewController.
-    }
+    
     
     //MARK: ACTIONS
     
     @IBAction func didTapRat(_ sender: UIButton) {
         descriptionSegue()
+        func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        guard let singDescritionViewController = segue.destination as? SingDescriptionViewController else {return}
+            SingDescriptionViewController.out
+        
+        
+        }
     }
     
     @IBAction func didTapOx(_ sender: UIButton) {

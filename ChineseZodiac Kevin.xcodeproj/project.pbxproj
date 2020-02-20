@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B25887E23FDB806005703E6 /* ChiniseZodiacAnimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B25887D23FDB805005703E6 /* ChiniseZodiacAnimals.swift */; };
 		8BE5747023FA859D005841A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5746F23FA859D005841A3 /* AppDelegate.swift */; };
 		8BE5747223FA859D005841A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5747123FA859D005841A3 /* SceneDelegate.swift */; };
 		8BE5747423FA859D005841A3 /* TwelveSingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE5747323FA859D005841A3 /* TwelveSingsViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B25887D23FDB805005703E6 /* ChiniseZodiacAnimals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiniseZodiacAnimals.swift; sourceTree = "<group>"; };
 		8BE5746C23FA859D005841A3 /* ChineseZodiac Kevin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChineseZodiac Kevin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE5746F23FA859D005841A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BE5747123FA859D005841A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				8BE5747D23FA859E005841A3 /* Info.plist */,
 				8BF4F53023FBF05200F7E517 /* Sings.swift */,
 				8BF4F53423FBF6EF00F7E517 /* SingDescriptionViewController.swift */,
+				8B25887D23FDB805005703E6 /* ChiniseZodiacAnimals.swift */,
 			);
 			path = "ChineseZodiac Kevin";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B25887E23FDB806005703E6 /* ChiniseZodiacAnimals.swift in Sources */,
 				8BF4F53523FBF6EF00F7E517 /* SingDescriptionViewController.swift in Sources */,
 				8BF4F53323FBF55500F7E517 /* PickerViewController.swift in Sources */,
 				8BE5747423FA859D005841A3 /* TwelveSingsViewController.swift in Sources */,

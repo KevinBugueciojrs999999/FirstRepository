@@ -10,6 +10,11 @@ import UIKit
 
 class SingDescriptionViewController: UIViewController {
     
+    //CALLER
+    
+    
+    var animals: ChiniseZodiacAnimals?
+    
     //MARK: OUTLETS
     
     @IBOutlet weak var animalSingOutlet: UIImageView!
@@ -20,28 +25,25 @@ class SingDescriptionViewController: UIViewController {
     
     @IBOutlet weak var animalDescriptionOutlet: UILabel!
     
-    //CALLER
-    
-    let sings: Sings
-    
-    var animalTitle: String
-    var animalImage: UIImage
-    var animalYears: String
-    var animalDescription: String
-    
-    
     //MARK: NAVIGATION
     
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        animalNameTitleOutlet.text = animalTitle
-        animalYearsOutlet.text = animalYears
-        animalDescriptionOutlet.text = animalDescription
-        animalSingOutlet.image = animalImage
+        
+        updateView()
     }
+    
+    func updateView() {
+        guard let animals = animals else {return}
+        
+        animalSingOutlet.image = UIImage(named: animals.image)
+        animalNameTitleOutlet.text = animals.sing
+        animalYearsOutlet.text = animals.years
+        animalDescriptionOutlet.text = animals.description
+    }
+    
+    
+    
     
 
     /*
