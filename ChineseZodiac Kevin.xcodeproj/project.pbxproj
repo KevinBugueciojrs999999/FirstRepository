@@ -14,7 +14,6 @@
 		8BE5747723FA859D005841A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5747523FA859D005841A3 /* Main.storyboard */; };
 		8BE5747923FA859E005841A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5747823FA859E005841A3 /* Assets.xcassets */; };
 		8BE5747C23FA859E005841A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE5747A23FA859E005841A3 /* LaunchScreen.storyboard */; };
-		8BF4F53123FBF05200F7E517 /* Sings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4F53023FBF05200F7E517 /* Sings.swift */; };
 		8BF4F53323FBF55500F7E517 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4F53223FBF55500F7E517 /* PickerViewController.swift */; };
 		8BF4F53523FBF6EF00F7E517 /* SingDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF4F53423FBF6EF00F7E517 /* SingDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +28,6 @@
 		8BE5747823FA859E005841A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BE5747B23FA859E005841A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BE5747D23FA859E005841A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BF4F53023FBF05200F7E517 /* Sings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sings.swift; sourceTree = "<group>"; };
 		8BF4F53223FBF55500F7E517 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 		8BF4F53423FBF6EF00F7E517 /* SingDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingDescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +70,6 @@
 				8BE5747823FA859E005841A3 /* Assets.xcassets */,
 				8BE5747A23FA859E005841A3 /* LaunchScreen.storyboard */,
 				8BE5747D23FA859E005841A3 /* Info.plist */,
-				8BF4F53023FBF05200F7E517 /* Sings.swift */,
 				8BF4F53423FBF6EF00F7E517 /* SingDescriptionViewController.swift */,
 				8B25887D23FDB805005703E6 /* ChiniseZodiacAnimals.swift */,
 			);
@@ -155,7 +152,6 @@
 				8BF4F53323FBF55500F7E517 /* PickerViewController.swift in Sources */,
 				8BE5747423FA859D005841A3 /* TwelveSingsViewController.swift in Sources */,
 				8BE5747023FA859D005841A3 /* AppDelegate.swift in Sources */,
-				8BF4F53123FBF05200F7E517 /* Sings.swift in Sources */,
 				8BE5747223FA859D005841A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

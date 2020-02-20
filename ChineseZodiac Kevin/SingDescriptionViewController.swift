@@ -9,12 +9,17 @@
 import UIKit
 
 class SingDescriptionViewController: UIViewController {
-    
+    static let singsToDescriptionSegueIdentifier = "singsToDescriptionSegue"
     //CALLER
     
     
-    var animals: ChiniseZodiacAnimals?
+    var animalTitle: String?
+    var animalYears: String?
+    var animalDescription: String?
+    var animalImage: UIImage?
+   // var animals: AnimalType?
     
+
     //MARK: OUTLETS
     
     @IBOutlet weak var animalSingOutlet: UIImageView!
@@ -30,16 +35,23 @@ class SingDescriptionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        updateView()
+        
+        animalSingOutlet.image = animalImage
+        animalNameTitleOutlet.text = animalTitle
+        animalYearsOutlet.text = animalYears
+        animalDescriptionOutlet.text = animalDescription
+        
+        // updateView()
     }
     
     func updateView() {
-        guard let animals = animals else {return}
+        // guard let animals = animals else {return}
         
-        animalSingOutlet.image = UIImage(named: animals.image)
-        animalNameTitleOutlet.text = animals.sing
-        animalYearsOutlet.text = animals.years
-        animalDescriptionOutlet.text = animals.description
+        
+//        animalSingOutlet.image = animals.image
+//        animalNameTitleOutlet.text = animals.title
+//        animalYearsOutlet.text = animals.years
+//        animalDescriptionOutlet.text = animals.description
     }
     
     

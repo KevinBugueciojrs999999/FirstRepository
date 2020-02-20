@@ -27,10 +27,9 @@ class TwelveSingsViewController: UIViewController {
     
     //MARK: FUNCTIONS and CALLS
     
-    let animalsArray: [ChiniseZodiacAnimals] = []
     
     func descriptionSegue() {
-
+        
         performSegue(withIdentifier: "singsToDescriptionSegue", sender: nil)
         
     }
@@ -41,12 +40,7 @@ class TwelveSingsViewController: UIViewController {
     
     @IBAction func didTapRat(_ sender: UIButton) {
         descriptionSegue()
-        func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        guard let singDescritionViewController = segue.destination as? SingDescriptionViewController else {return}
-            SingDescriptionViewController.out
         
-        
-        }
     }
     
     @IBAction func didTapOx(_ sender: UIButton) {
@@ -55,7 +49,7 @@ class TwelveSingsViewController: UIViewController {
     
     @IBAction func didTapTiger(_ sender: UIButton) {
         descriptionSegue()
-
+        
     }
     
     @IBAction func didTapBunny(_ sender: UIButton) {
@@ -102,6 +96,20 @@ class TwelveSingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK: NAVIGATION
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == SingDescriptionViewController.singsToDescriptionSegueIdentifier,
+            let singDescriptionViewController = segue.destination as? SingDescriptionViewController else { return }
+        
+        
+        
+        let winningAnimal = state.winningAnimal
+        singDescriptionViewController.animalTitle =
+        singDescriptionViewController.animalYears =
+        singDescriptionViewController.animalDescription =
+        singDescriptionViewController.animalImage =
+    }
     
 }
 
