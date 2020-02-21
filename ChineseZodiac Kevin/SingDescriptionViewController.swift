@@ -10,13 +10,11 @@ import UIKit
 
 class SingDescriptionViewController: UIViewController {
     static let singsToDescriptionSegueIdentifier = "singsToDescriptionSegue"
+    var horoscopereceived = Horoscope.init(as: nil)
     //CALLER
     
     
-    var animalTitle: String?
-    var animalYears: String?
-    var animalDescription: String?
-    var animalImage: UIImage?
+
    // var animals: AnimalType?
     
 
@@ -35,37 +33,19 @@ class SingDescriptionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if horoscopereceived.animalsTypes != nil {
         
-        animalSingOutlet.image = animalImage
-        animalNameTitleOutlet.text = animalTitle
-        animalYearsOutlet.text = animalYears
-        animalDescriptionOutlet.text = animalDescription
-        
+        animalSingOutlet.image = UIImage(named: horoscopereceived.animalsTypes?.image ?? "<no_name>")
+            animalNameTitleOutlet.text = horoscopereceived.animalsTypes?.title
+            animalYearsOutlet.text = horoscopereceived.animalsTypes?.years
+            animalDescriptionOutlet.text = horoscopereceived.animalsTypes?.description
+            
+            print(horoscopereceived.animalsTypes?.title as Any)
+            print(horoscopereceived.animalsTypes?.image as Any)
+            print(horoscopereceived.animalsTypes?.years as Any)
+            print(horoscopereceived.animalsTypes?.description as Any)
+
+        }
         // updateView()
     }
-    
-    func updateView() {
-        // guard let animals = animals else {return}
-        
-        
-//        animalSingOutlet.image = animals.image
-//        animalNameTitleOutlet.text = animals.title
-//        animalYearsOutlet.text = animals.years
-//        animalDescriptionOutlet.text = animals.description
-    }
-    
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

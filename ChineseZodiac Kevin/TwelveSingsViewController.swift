@@ -9,7 +9,8 @@
 import UIKit
 
 class TwelveSingsViewController: UIViewController {
-    
+   
+
     //MARK: OUTLETS
     
     @IBOutlet weak var ratOutlet: UIButton!
@@ -25,67 +26,64 @@ class TwelveSingsViewController: UIViewController {
     @IBOutlet weak var dogOutlet: UIButton!
     @IBOutlet weak var pigOutlet: UIButton!
     
+    
+    
     //MARK: FUNCTIONS and CALLS
     
-    
-    func descriptionSegue() {
-        
-        performSegue(withIdentifier: "singsToDescriptionSegue", sender: nil)
-        
-    }
-    
+
     
     
     //MARK: ACTIONS
     
     @IBAction func didTapRat(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .rat)
         
     }
     
     @IBAction func didTapOx(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .ox)
+
     }
     
     @IBAction func didTapTiger(_ sender: UIButton) {
-        descriptionSegue()
-        
+ segueInteraction (as: .tiger)
+
     }
     
     @IBAction func didTapBunny(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .rabbit)
     }
     
     @IBAction func didTapDragon(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .dragon)
     }
     
     @IBAction func didTapSnake(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .snake)
     }
     
     @IBAction func didTapHorse(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .horse)
     }
     
     @IBAction func didTapGoat(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .goat)
     }
     
     @IBAction func didTapMonkey(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .monkey)
     }
     
     @IBAction func didTapChicken(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .rooster)
     }
     
     @IBAction func didTapDog(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .dog)
     }
     
     @IBAction func didTapPig(_ sender: UIButton) {
-        descriptionSegue()
+        segueInteraction (as: .pig)
     }
     
     
@@ -93,23 +91,28 @@ class TwelveSingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
+    var horoscopeSender = Horoscope.init(as: nil)
+
     //MARK: NAVIGATION
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == SingDescriptionViewController.singsToDescriptionSegueIdentifier,
-            let singDescriptionViewController = segue.destination as? SingDescriptionViewController else { return }
-        
-        
-        
-        let winningAnimal = state.winningAnimal
-        singDescriptionViewController.animalTitle =
-        singDescriptionViewController.animalYears =
-        singDescriptionViewController.animalDescription =
-        singDescriptionViewController.animalImage =
+    func segueInteraction (as animal: Horoscope.AnimalType){
+        horoscopeSender.animalsTypes = animal
+        performSegue(withIdentifier: SingDescriptionViewController.singsToDescriptionSegueIdentifier, sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == SingDescriptionViewController.singsToDescriptionSegueIdentifier {
+        let singToDescription = segue.destination as! SingDescriptionViewController
+        singToDescription.horoscopereceived = horoscopeSender
+    }
+ 
     
 }
 
+}
