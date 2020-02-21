@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hmU-ND-Rts">
-    <device id="retina5_5" orientation="landscape" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,7 +31,7 @@
                 <navigationController id="YXI-b0-WOa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="calendar" id="oiI-Ef-RYd"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ukq-8G-tvv">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -47,11 +47,11 @@
             <objects>
                 <viewController id="dbN-xj-2Vn" customClass="PickerViewController" customModule="ChineseZodiac_Kevin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TXu-3g-puc">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="6hr-30-5xQ">
-                                <rect key="frame" x="47" y="340" width="642" height="216"/>
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="-375537600">
                                     <!--1989-02-06 12:00:00 +0000-->
@@ -95,17 +95,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TwelveSingsViewController" customModule="ChineseZodiac_Kevin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="mYJ-TN-xW4">
-                                <rect key="frame" x="0.0" y="44" width="736" height="321"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jA5-yS-fbb">
-                                        <rect key="frame" x="0.0" y="0.0" width="736" height="80.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="160.66666666666666"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJG-Sr-5IJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="160.66666666666666"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" image="rsz_1rata"/>
                                                 <connections>
@@ -113,14 +113,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuV-5E-Jv0">
-                                                <rect key="frame" x="252" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="144.66666666666666" y="0.0" width="124.66666666666666" height="160.66666666666666"/>
                                                 <state key="normal" image="Toro"/>
                                                 <connections>
                                                     <action selector="didTapOx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enE-ic-5RW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L94-It-0tH">
-                                                <rect key="frame" x="504" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="289.33333333333331" y="0.0" width="124.66666666666669" height="160.66666666666666"/>
                                                 <state key="normal" image="Tigre"/>
                                                 <connections>
                                                     <action selector="didTapTiger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipn-6z-zpG"/>
@@ -129,24 +129,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Lx9-a6-IWm">
-                                        <rect key="frame" x="0.0" y="80.333333333333343" width="736" height="80.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="160.66666666666666" width="414" height="160.99999999999997"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NW7-Sf-rG0">
-                                                <rect key="frame" x="0.0" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="161"/>
                                                 <state key="normal" image="Conejo"/>
                                                 <connections>
                                                     <action selector="didTapBunny:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GIn-p2-huY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKF-62-Opp">
-                                                <rect key="frame" x="252" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="144.66666666666666" y="0.0" width="124.66666666666666" height="161"/>
                                                 <state key="normal" image="Dragon"/>
                                                 <connections>
                                                     <action selector="didTapDragon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="60s-4c-iFu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beJ-Jb-lBr">
-                                                <rect key="frame" x="504" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="289.33333333333331" y="0.0" width="124.66666666666669" height="161"/>
                                                 <state key="normal" image="Serpiente"/>
                                                 <connections>
                                                     <action selector="didTapSnake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jQj-VB-h0V"/>
@@ -155,24 +155,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-A5-9FX">
-                                        <rect key="frame" x="0.0" y="160.66666666666666" width="736" height="80"/>
+                                        <rect key="frame" x="0.0" y="321.66666666666669" width="414" height="160.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-P6-p7d">
-                                                <rect key="frame" x="0.0" y="0.0" width="232" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="160.66666666666666"/>
                                                 <state key="normal" image="Caballo"/>
                                                 <connections>
                                                     <action selector="didTapHorse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWK-lb-YLg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vt7-x8-ytv">
-                                                <rect key="frame" x="252" y="0.0" width="232" height="80"/>
+                                                <rect key="frame" x="144.66666666666666" y="0.0" width="124.66666666666666" height="160.66666666666666"/>
                                                 <state key="normal" image="Cabra"/>
                                                 <connections>
                                                     <action selector="didTapGoat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDb-Ag-VCY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85e-yc-31T">
-                                                <rect key="frame" x="504" y="0.0" width="232" height="80"/>
+                                                <rect key="frame" x="289.33333333333331" y="0.0" width="124.66666666666669" height="160.66666666666666"/>
                                                 <state key="normal" image="Mono"/>
                                                 <connections>
                                                     <action selector="didTapMonkey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwY-QV-XuG"/>
@@ -181,24 +181,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YAR-Qc-Qpr">
-                                        <rect key="frame" x="0.0" y="240.66666666666671" width="736" height="80.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="482.33333333333343" width="414" height="160.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-uw-k5y">
-                                                <rect key="frame" x="0.0" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="124.66666666666667" height="160.66666666666666"/>
                                                 <state key="normal" image="Pollo"/>
                                                 <connections>
                                                     <action selector="didTapChicken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2IB-P1-9u5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tla-4f-KVJ">
-                                                <rect key="frame" x="252" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="144.66666666666666" y="0.0" width="124.66666666666666" height="160.66666666666666"/>
                                                 <state key="normal" image="Perro"/>
                                                 <connections>
                                                     <action selector="didTapDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edB-L0-svJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-gU-QEN">
-                                                <rect key="frame" x="504" y="0.0" width="232" height="80.333333333333329"/>
+                                                <rect key="frame" x="289.33333333333331" y="0.0" width="124.66666666666669" height="160.66666666666666"/>
                                                 <state key="normal" image="Cerdo"/>
                                                 <connections>
                                                     <action selector="didTapPig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8H-gp-QlY"/>
@@ -259,44 +259,44 @@
             <objects>
                 <viewController id="1eU-21-FrJ" customClass="SingDescriptionViewController" customModule="ChineseZodiac_Kevin" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g97-mA-Tfy">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5W-uJ-Az1">
-                                <rect key="frame" x="0.0" y="44" width="736" height="321"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gra-TY-err">
-                                        <rect key="frame" x="0.0" y="0.0" width="736" height="366"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="698"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hbe-UY-kfO">
-                                                <rect key="frame" x="10" y="10" width="716" height="123"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hbe-UY-kfO">
+                                                <rect key="frame" x="10" y="10" width="394" height="189"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NI1-e3-Eu5">
-                                                        <rect key="frame" x="0.0" y="11.666666666666671" width="138" height="100"/>
+                                                        <rect key="frame" x="0.0" y="44.666666666666671" width="197" height="100.00000000000001"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rsz_1rata" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-QT-aXE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="197" height="100"/>
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dz4-ev-yyP">
-                                                        <rect key="frame" x="138" y="0.0" width="578" height="123"/>
+                                                        <rect key="frame" x="197" y="0.0" width="197" height="189"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvM-aJ-gq1">
-                                                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="41"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="63"/>
                                                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="35"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Features of your sing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-Uy-nL2">
-                                                                <rect key="frame" x="0.0" y="41" width="199.66666666666666" height="41"/>
-                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1912, 1924,1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-EG-trE">
+                                                                <rect key="frame" x="0.0" y="63" width="173" height="63"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1912, 1924,1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-EG-trE">
-                                                                <rect key="frame" x="0.0" y="82" width="419" height="41"/>
-                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Features of your sing:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-Uy-nL2">
+                                                                <rect key="frame" x="0.0" y="126" width="109" height="63"/>
+                                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -311,10 +311,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EGT-6h-NYW">
-                                                <rect key="frame" x="10" y="133" width="716" height="233"/>
+                                                <rect key="frame" x="10" y="198.99999999999997" width="394" height="378.33333333333326"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvU-YM-qH1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="716" height="233"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="378.33333333333331"/>
                                                         <string key="text">Optimistic and energetic, people born in the Rat year are likable by all. They are sensitive to other’s emotions but are stubborn with your opinion. Their personality is kind, but due to weak communication skills, their words may seem impolite and rude.
 
 On the financial side, they like saving and can be stingy. However, their love for hoarding will sometimes cause them to waste money on unnecessary things. </string>
@@ -330,7 +330,7 @@ On the financial side, they like saving and can be stingy. However, their love f
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="EGT-6h-NYW" secondAttribute="bottom" id="3z3-79-JEN"/>
+                                            <constraint firstAttribute="bottom" secondItem="EGT-6h-NYW" secondAttribute="bottom" constant="120.66666666666674" id="3z3-79-JEN"/>
                                             <constraint firstAttribute="trailing" secondItem="EGT-6h-NYW" secondAttribute="trailing" constant="10" id="5bF-so-Bpr"/>
                                             <constraint firstItem="Hbe-UY-kfO" firstAttribute="leading" secondItem="Gra-TY-err" secondAttribute="leading" constant="10" id="GDP-Xv-2Gg"/>
                                             <constraint firstItem="EGT-6h-NYW" firstAttribute="top" secondItem="Hbe-UY-kfO" secondAttribute="bottom" id="KaT-Qv-1dv"/>
@@ -341,10 +341,10 @@ On the financial side, they like saving and can be stingy. However, their love f
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Gra-TY-err" firstAttribute="height" secondItem="YcQ-VO-YfM" secondAttribute="height" constant="-93" id="4pM-93-2x6"/>
+                                    <constraint firstItem="Gra-TY-err" firstAttribute="height" secondItem="YcQ-VO-YfM" secondAttribute="height" constant="27.666666666666629" id="4pM-93-2x6"/>
                                     <constraint firstItem="Gra-TY-err" firstAttribute="top" secondItem="YcQ-VO-YfM" secondAttribute="top" id="Bud-dO-Xie"/>
                                     <constraint firstItem="Gra-TY-err" firstAttribute="leading" secondItem="YcQ-VO-YfM" secondAttribute="leading" id="MpG-aT-ITl"/>
-                                    <constraint firstItem="Gra-TY-err" firstAttribute="bottom" secondItem="YcQ-VO-YfM" secondAttribute="bottom" constant="-93" id="nGh-h1-3pr"/>
+                                    <constraint firstItem="Gra-TY-err" firstAttribute="bottom" secondItem="YcQ-VO-YfM" secondAttribute="bottom" constant="27.666666666666629" id="nGh-h1-3pr"/>
                                     <constraint firstItem="Gra-TY-err" firstAttribute="trailing" secondItem="YcQ-VO-YfM" secondAttribute="trailing" id="nmk-gy-t6k"/>
                                     <constraint firstItem="Gra-TY-err" firstAttribute="width" secondItem="YcQ-VO-YfM" secondAttribute="width" id="yLI-z9-W8i"/>
                                 </constraints>
@@ -357,8 +357,8 @@ On the financial side, they like saving and can be stingy. However, their love f
                             <constraint firstItem="e5W-uJ-Az1" firstAttribute="top" secondItem="xe3-f6-wv7" secondAttribute="top" id="B5g-VZ-EHe"/>
                             <constraint firstItem="e5W-uJ-Az1" firstAttribute="bottom" secondItem="xe3-f6-wv7" secondAttribute="bottom" id="Mxq-Re-lQ0"/>
                             <constraint firstItem="e5W-uJ-Az1" firstAttribute="leading" secondItem="xe3-f6-wv7" secondAttribute="leading" id="ewG-bh-3o4"/>
-                            <constraint firstItem="Gra-TY-err" firstAttribute="width" secondItem="g97-mA-Tfy" secondAttribute="width" id="icB-bN-K2b"/>
-                            <constraint firstItem="Gra-TY-err" firstAttribute="height" secondItem="g97-mA-Tfy" secondAttribute="height" priority="250" constant="-93" id="o3G-tZ-apL"/>
+                            <constraint firstItem="Gra-TY-err" firstAttribute="width" secondItem="e5W-uJ-Az1" secondAttribute="width" id="icB-bN-K2b"/>
+                            <constraint firstItem="Gra-TY-err" firstAttribute="height" secondItem="e5W-uJ-Az1" secondAttribute="height" priority="250" id="o3G-tZ-apL"/>
                             <constraint firstItem="e5W-uJ-Az1" firstAttribute="trailing" secondItem="xe3-f6-wv7" secondAttribute="trailing" id="zLU-Yr-ZHX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xe3-f6-wv7"/>
@@ -381,7 +381,7 @@ On the financial side, they like saving and can be stingy. However, their love f
                 <navigationController id="jK4-vC-XkK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="chinese" id="Q1o-pB-qDi"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U2m-Ds-4Yr">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -411,6 +411,6 @@ On the financial side, they like saving and can be stingy. However, their love f
         <image name="rsz_1rata" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Kh0-oH-TRU"/>
+        <segue reference="yGg-d7-6NH"/>
     </inferredMetricsTieBreakers>
 </document>
