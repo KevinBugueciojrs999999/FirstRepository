@@ -126,4 +126,87 @@ struct Horoscope {
     init(as animalType: AnimalType?) {
         self.animalsTypes = animalType
     }
+    
+    func typeForDate (_ date: Date) -> AnimalType?{
+        
+        let dateAsString = date.description
+        let dateSpliteinBlank = dateAsString.split(separator: " ")
+        let dateSplited = dateSpliteinBlank[0].split(separator: "-")
+        
+        guard let year = Int(dateSplited[0]), let month = Int(dateSplited[1]), let day = Int(dateSplited[2]) else {return nil}
+        
+        switch year {
+        case 1990:
+            if day <= 26 {
+                return .snake
+            }else {
+                return .horse
+            }
+        case 1991:
+            if day <= 15 && month <= 2 {
+                return .horse
+            }else { return .goat }
+        case 1992:
+            if day <= 3 && month <= 2 {return .goat}
+            else { return .monkey }
+        case 1993:
+            if day <= 22 && month <= 1 {return .monkey}
+            else { return .rooster }
+        case 1994:
+            if day <= 9 && month <= 2 {return .rooster}
+            else { return .dog}
+        case 1995:
+            if day <= 30 && month <= 1 {return .dog}
+            else {return .pig}
+        case 1996:
+            if day <= 18 && month <= 2 {return .pig}
+            else { return .rat }
+        case 1997:
+            if day <= 7 && month <= 2 {return .rat}
+            else { return .ox }
+        case 1998:
+            if day <= 27 && month <= 1 {return .ox}
+            else { return .tiger }
+        case 1999:
+            if day <= 15 && month <= 2 {return .tiger}
+            else {return .rabbit }
+        case 2000:
+            if day <= 4 && month <= 2 {return .rabbit}
+            else { return .dragon}
+        default:
+            return calculeSymbol(year: year)
+        }
+        
+    }
+    func calculeSymbol (year:Int) -> AnimalType? {
+        let tipo = year%12
+        switch tipo {
+        case 1:
+            return .snake
+        case 2:
+            return .horse
+        case 3:
+            return .goat
+        case 4:
+            return .monkey
+        case 5:
+            return .rooster
+        case 6:
+            return .dog
+        case 7:
+            return .pig
+        case 8:
+            return .rat
+        case 9:
+            return .ox
+        case 10:
+            return .tiger
+        case 11:
+            return .rabbit
+        case 0:
+            return .dragon
+        default:
+            return nil
+        }
+    }
 }

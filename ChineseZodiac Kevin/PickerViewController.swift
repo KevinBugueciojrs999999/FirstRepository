@@ -7,8 +7,14 @@
 //
 
 import UIKit
-
+protocol DatePickerDelegate {
+    func datePickerValue (_ date: Date)
+}
 class PickerViewController: UIViewController {
+    
+    static let pickerToDescriptionSegueIdentifier = "singsToDescriptionSegue"
+    
+    
     
     //MARK: OUTLETS
     
@@ -16,15 +22,15 @@ class PickerViewController: UIViewController {
     
     @IBOutlet weak var nextOutlet: UIButton!
     
-    //MARK: INSTANCES
     
+
     
     
     //MARK: ACTIONS
     
     
     @IBAction func didTapNextButton(_ sender: UIButton) {
- 
+        datePickerValue(datePickerOutlet.date)
     }
     
     
@@ -34,15 +40,26 @@ class PickerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func datePickerValue (_ date: Date) {
 
-    /*
+        
+        if horoscopeSender.typeForDate(datePickerOutlet.date) != nil {
+            horoscopeSender.animalsTypes = horoscopeSender.typeForDate(datePickerOutlet.date)!
+        }
+    }
+
+    var horoscopeSender = Horoscope.init(as: nil)
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    if segue.identifier == "pickerToDescriptionSegue"  {
+        let pickerVC = segue.destination as! SingDescriptionViewController
+        pickerVC.horoscopereceived = horoscopeSender
     }
-    */
-
+    
 }
+}
+
+

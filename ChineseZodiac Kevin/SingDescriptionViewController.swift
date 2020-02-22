@@ -40,10 +40,6 @@ class SingDescriptionViewController: UIViewController {
             animalYearsOutlet.text = horoscopereceived.animalsTypes?.years
             animalDescriptionOutlet.text = horoscopereceived.animalsTypes?.description
             
-            print(horoscopereceived.animalsTypes?.title as Any)
-            print(horoscopereceived.animalsTypes?.image as Any)
-            print(horoscopereceived.animalsTypes?.years as Any)
-            print(horoscopereceived.animalsTypes?.description as Any)
 
         }
         // updateView()

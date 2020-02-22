@@ -50,34 +50,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="6hr-30-5xQ">
-                                <rect key="frame" x="47" y="340" width="320" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="-375537600">
-                                    <!--1989-02-06 12:00:00 +0000-->
-                                </date>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="1940400">
-                                    <!--2001-01-23 11:00:00 +0000-->
-                                </date>
-                            </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your date of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSF-zx-CBN">
-                                <rect key="frame" x="34" y="216" width="347" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdw-kV-gD3">
-                                <rect key="frame" x="157" y="564" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="next"/>
-                                <connections>
-                                    <action selector="didTapNextButton:" destination="dbN-xj-2Vn" eventType="touchUpInside" id="wWY-e0-5On"/>
-                                    <segue destination="1eU-21-FrJ" kind="push" identifier="pickerToDescriptionSegue" id="yGg-d7-6NH"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="H8i-cu-i3g">
+                                <rect key="frame" x="0.0" y="44" width="414" height="643"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iCO-2e-rpO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="522"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your date of birth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSF-zx-CBN">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
+                                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="6hr-30-5xQ">
+                                                <rect key="frame" x="0.0" y="261" width="414" height="261"/>
+                                                <date key="minimumDate" timeIntervalSinceReferenceDate="-375537600">
+                                                    <!--1989-02-06 12:00:00 +0000-->
+                                                </date>
+                                                <date key="maximumDate" timeIntervalSinceReferenceDate="1940400">
+                                                    <!--2001-01-23 11:00:00 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tcS-aU-NoU">
+                                        <rect key="frame" x="0.0" y="522" width="414" height="121"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdw-kV-gD3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="121"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" image="icons8-go-100"/>
+                                                <connections>
+                                                    <action selector="didTapNextButton:" destination="dbN-xj-2Vn" eventType="touchUpInside" id="wWY-e0-5On"/>
+                                                    <segue destination="1eU-21-FrJ" kind="show" identifier="pickerToDescriptionSegue" id="yGg-d7-6NH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H8i-cu-i3g" firstAttribute="trailing" secondItem="NQm-J2-UZn" secondAttribute="trailing" id="LEi-Aa-aO6"/>
+                            <constraint firstItem="H8i-cu-i3g" firstAttribute="bottom" secondItem="NQm-J2-UZn" secondAttribute="bottom" id="Xwc-2T-hA9"/>
+                            <constraint firstItem="H8i-cu-i3g" firstAttribute="top" secondItem="NQm-J2-UZn" secondAttribute="top" id="yjE-iY-xkD"/>
+                            <constraint firstItem="H8i-cu-i3g" firstAttribute="leading" secondItem="NQm-J2-UZn" secondAttribute="leading" id="z1t-RW-2Ho"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NQm-J2-UZn"/>
                     </view>
                     <navigationItem key="navigationItem" title="Calculate your sing" id="MR2-UO-NN2"/>
@@ -88,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5u-br-X16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="356.52173913043481" y="529.6875"/>
+            <point key="canvasLocation" x="356.52173913043481" y="529.07608695652175"/>
         </scene>
         <!--Chinese zodiac sings-->
         <scene sceneID="tne-QT-ifu">
@@ -247,7 +266,7 @@
                         <outlet property="ratOutlet" destination="tJG-Sr-5IJ" id="aoC-W7-azG"/>
                         <outlet property="snakeOutlet" destination="beJ-Jb-lBr" id="UsN-Mq-Q1r"/>
                         <outlet property="tigerOutlet" destination="L94-It-0tH" id="At7-ur-jYg"/>
-                        <segue destination="1eU-21-FrJ" kind="push" identifier="singsToDescriptionSegue" id="Kh0-oH-TRU"/>
+                        <segue destination="1eU-21-FrJ" kind="show" identifier="singsToDescriptionSegue" id="Kh0-oH-TRU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -407,7 +426,7 @@ On the financial side, they like saving and can be stingy. However, their love f
         <image name="Toro" width="100" height="100"/>
         <image name="calendar" width="64" height="64"/>
         <image name="chinese" width="64" height="64"/>
-        <image name="next" width="512" height="512"/>
+        <image name="icons8-go-100" width="100" height="100"/>
         <image name="rsz_1rata" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
