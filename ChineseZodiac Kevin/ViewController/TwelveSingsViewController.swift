@@ -9,8 +9,8 @@
 import UIKit
 
 class TwelveSingsViewController: UIViewController {
-   
-
+    
+    
     //MARK: OUTLETS
     
     @IBOutlet weak var ratOutlet: UIButton!
@@ -27,12 +27,6 @@ class TwelveSingsViewController: UIViewController {
     @IBOutlet weak var pigOutlet: UIButton!
     
     
-    
-    //MARK: FUNCTIONS and CALLS
-    
-
-    
-    
     //MARK: ACTIONS
     
     @IBAction func didTapRat(_ sender: UIButton) {
@@ -42,12 +36,12 @@ class TwelveSingsViewController: UIViewController {
     
     @IBAction func didTapOx(_ sender: UIButton) {
         segueInteraction (as: .ox)
-
+        
     }
     
     @IBAction func didTapTiger(_ sender: UIButton) {
- segueInteraction (as: .tiger)
-
+        segueInteraction (as: .tiger)
+        
     }
     
     @IBAction func didTapBunny(_ sender: UIButton) {
@@ -87,19 +81,18 @@ class TwelveSingsViewController: UIViewController {
     }
     
     
-    
+    //MARK: LIFECYCLE
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        // Do any additional setup after loading the view.
+     
     }
+    
+    
+    //MARK: NAVIGATION
     
     var horoscopeSender = Horoscope.init(as: nil)
 
-    //MARK: NAVIGATION
     
     func segueInteraction (as animal: Horoscope.AnimalType){
         horoscopeSender.animalsTypes = animal
@@ -107,12 +100,12 @@ class TwelveSingsViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == SingDescriptionViewController.singsToDescriptionSegueIdentifier {
-        let singToDescription = segue.destination as! SingDescriptionViewController
-        singToDescription.horoscopereceived = horoscopeSender
+        if segue.identifier == SingDescriptionViewController.singsToDescriptionSegueIdentifier {
+            let singToDescription = segue.destination as! SingDescriptionViewController
+            singToDescription.horoscopereceived = horoscopeSender
+        }
+        
+        
     }
- 
     
-}
-
 }

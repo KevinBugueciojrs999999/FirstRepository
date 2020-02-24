@@ -70,6 +70,7 @@
                                                 <date key="maximumDate" timeIntervalSinceReferenceDate="1940400">
                                                     <!--2001-01-23 11:00:00 +0000-->
                                                 </date>
+                                                <locale key="locale" localeIdentifier="en_ES"/>
                                             </datePicker>
                                         </subviews>
                                     </stackView>
@@ -285,13 +286,13 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gra-TY-err">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="698"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="663"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hbe-UY-kfO">
-                                                <rect key="frame" x="10" y="10" width="394" height="189"/>
+                                                <rect key="frame" x="10" y="10" width="394" height="154"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NI1-e3-Eu5">
-                                                        <rect key="frame" x="0.0" y="44.666666666666671" width="197" height="100.00000000000001"/>
+                                                        <rect key="frame" x="0.0" y="27" width="197" height="100"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rsz_1rata" translatesAutoresizingMaskIntoConstraints="NO" id="oB7-QT-aXE">
                                                                 <rect key="frame" x="0.0" y="0.0" width="197" height="100"/>
@@ -299,22 +300,22 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="dz4-ev-yyP">
-                                                        <rect key="frame" x="197" y="0.0" width="197" height="189"/>
+                                                        <rect key="frame" x="197" y="0.0" width="197" height="154"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvM-aJ-gq1">
-                                                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="63"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="51.333333333333336"/>
                                                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="35"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1912, 1924,1936, 1948, 1960, 1972, 1984, 1996, 2008, 2020" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-EG-trE">
-                                                                <rect key="frame" x="0.0" y="63" width="173" height="63"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From 02/01/1992 to 14/02/1993 (D/M/Y)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQe-EG-trE">
+                                                                <rect key="frame" x="0.0" y="51.333333333333329" width="148.66666666666666" height="51.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Features of your sing:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-Uy-nL2">
-                                                                <rect key="frame" x="0.0" y="126" width="109" height="63"/>
+                                                                <rect key="frame" x="0.0" y="102.66666666666664" width="109" height="51.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="22"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -330,7 +331,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EGT-6h-NYW">
-                                                <rect key="frame" x="10" y="198.99999999999997" width="394" height="378.33333333333326"/>
+                                                <rect key="frame" x="10" y="163.99999999999997" width="394" height="378.33333333333326"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvU-YM-qH1">
                                                         <rect key="frame" x="0.0" y="0.0" width="394" height="378.33333333333331"/>

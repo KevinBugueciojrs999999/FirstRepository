@@ -9,15 +9,15 @@
 import UIKit
 
 class SingDescriptionViewController: UIViewController {
+    
+    
+    //MARK: UNIQUE CALLS
+    
     static let singsToDescriptionSegueIdentifier = "singsToDescriptionSegue"
     var horoscopereceived = Horoscope.init(as: nil)
-    //CALLER
-    
-    
 
-   // var animals: AnimalType?
     
-
+    
     //MARK: OUTLETS
     
     @IBOutlet weak var animalSingOutlet: UIImageView!
@@ -28,19 +28,20 @@ class SingDescriptionViewController: UIViewController {
     
     @IBOutlet weak var animalDescriptionOutlet: UILabel!
     
-    //MARK: NAVIGATION
+    //MARK: LIFECYCLE
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if horoscopereceived.animalsTypes != nil {
         
-        animalSingOutlet.image = UIImage(named: horoscopereceived.animalsTypes?.image ?? "<no_name>")
+        if horoscopereceived.animalsTypes != nil {
+            
+            animalSingOutlet.image = UIImage(named: horoscopereceived.animalsTypes?.image ?? "<no_name>")
             animalNameTitleOutlet.text = horoscopereceived.animalsTypes?.title
             animalYearsOutlet.text = horoscopereceived.animalsTypes?.years
             animalDescriptionOutlet.text = horoscopereceived.animalsTypes?.description
             
-
+            
         }
         // updateView()
     }
